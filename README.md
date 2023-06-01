@@ -1,6 +1,16 @@
-# Simple Weather
+<h1 align="center">Weather Tool</h1>
 
-This is a simple weather forecast application built with Python. It retrieves the current weather information for a specified city using the OpenWeatherMap API and displays it in a graphical user interface (GUI) using the Tkinter library.
+
+<p align="center">A delightful and easy-to-use weather forecast application</p>
+
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#example">Example</a> 
+</p>
+
+---
 
 ## Features
 
@@ -9,13 +19,19 @@ This is a simple weather forecast application built with Python. It retrieves th
 - Provide weather-related messages based on the current conditions
 - Simple and intuitive user interface
 
-## Prerequisites
+## Installation
 
-- Python 3.x installed
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/simple-weather.git
+   cd simple-weather
 
 ## Usage
 
 1. Open the terminal or command prompt and navigate to the project directory.
+     ```bash
+      cd simple-weather
 
 2. Run the application:
 
@@ -28,6 +44,7 @@ This is a simple weather forecast application built with Python. It retrieves th
 5. Depending on the weather conditions, the application will provide a relevant message, such as "Carry your umbrella, it will rain today" or "Wear sunscreen, it's hot today".(tinker.py)
 
 ## Example
+
 Here's an example of the application in action:
 
 ```bash
@@ -40,4 +57,5 @@ Wind: 10 km/h
 Description: Cloudy
 
 It's a cloudy day. Don't forget your jacket!
+
 
