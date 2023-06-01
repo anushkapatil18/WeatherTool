@@ -32,6 +32,8 @@ def get_weather(city_name):
         #wind unit is in km/h
         print(f"Wind: {current_data['wind']['speed']} km/h")
         print(f"Description: {current_data['weather'][0]['description']}")
+        message = prompt_message_based_on_weather(current_data['weather'][0]['description'])
+        print(message)
         #line space after everyday weather
         print("\n")
 
@@ -67,6 +69,39 @@ def get_weather(city_name):
         print(tabulate(table_data, headers=headers, tablefmt="grid"))
     else:
         print(f"Error fetching forecast data for {city_name}. Please try again later.")
+
+
+def prompt_message_based_on_weather(description):
+    description = description.lower()
+
+    if 'rain' in description:
+        return "Carry your umbrella, it will rain today."
+    elif 'sun' in description or 'clear' in description:
+        return "Wear sunscreen, it's sunny today."
+    elif 'cloud' in description:
+        if 'scattered' in description:
+            return "Expect scattered clouds."
+        elif 'few' in description:
+            return "Expect a few clouds."
+        elif 'broken' in description:
+            return "Expect broken clouds."
+        elif 'overcast' in description:
+            return "Expect overcast clouds."
+        else:
+            return "It's cloudy today."
+    elif 'snow' in description:
+        return "Bundle up, it's snowing today."
+    elif 'wind' in description:
+        return "Hold onto your hat, it's windy today."
+    elif 'thunderstorm' in description:
+        return "Stay indoors, there's a thunderstorm."
+    elif 'fog' in description:
+        return "Drive carefully, there's fog."
+    elif 'haze' in description or 'smoke' in description:
+        return "Air quality may be poor, be cautious."
+    else:
+        return "Enjoy the weather!"
+
 
 
 if __name__ == '__main__':
