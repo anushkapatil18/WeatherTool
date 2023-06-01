@@ -41,7 +41,7 @@
 
 4. The current weather information for the specified city will be displayed, including temperature, humidity, wind speed, and description.
 
-5. Depending on the weather conditions, the application will provide a relevant message, such as "Carry your umbrella, it will rain today" or "Wear sunscreen, it's hot today".(tinker.py)
+5. Depending on the weather conditions, the application will provide a relevant message, such as "Carry your umbrella, it will rain today" or "Wear sunscreen, it's hot today".
 
 ## Example
 
