@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <h1>Weather Forecast for {{ city_name }}</h1>
+    <h2>Current Weather</h2>
+    <p>Temperature: {{ current_data['main']['temp'] }}°C</p>
+    <p>Humidity: {{ current_data['main']['humidity'] }}%</p>
+    <p>Wind: {{ current_data['wind']['speed'] }} km/h</p>
+    <p>Description: {{ current_data['weather'][0]['description'] }}</p>
+
+    <h2>Prompt Message</h2>
+    <p>{{ prompt_message }}</p>
+
+    <h2>Weather Forecast for the Next Week</h2>
+    <pre>{{ forecast_data }}</pre>
+</body>
+</html>

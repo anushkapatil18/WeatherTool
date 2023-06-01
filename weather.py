@@ -1,7 +1,5 @@
 #API_KEY = '67616e981465124e28cfcf9cc22d6dc4'
 import requests
-import json
-import sys
 import geocoder
 from tabulate import tabulate
 
@@ -28,7 +26,7 @@ def get_weather(city_name):
         print(f"Current weather in {city_name}:")
         print(f"Temperature: {current_data['main']['temp']}°C")
         #code for humidity variable
-        #humidity unit is in percentage
+        #humidity unit is in %
         print(f"Humidity: {current_data['main']['humidity']}%")
         #code for wind variable
         #wind unit is in km/h
@@ -72,25 +70,22 @@ def get_weather(city_name):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print("Please provide a city name as a command-line argument.")
-    else:
         print("Weather Forecast Tool")
-    print("1. Enter a city name")
-    print("2. Use current location")
+        print("1. Enter a city name")
+        print("2. Use current location")
 
-    choice = input("Select an option (1 or 2): ")
+        choice = input("Select an option (1 or 2): ")
 
-    if choice == '1':
-        city_name = input("Enter a city name: ")
-    elif choice == '2':
-        city_name = get_current_location()
-        print(f"Detected current location: {city_name}")
-    else:
-        print("Invalid choice. Exiting...")
-        exit()
+        if choice == '1':
+            city_name = input("Enter a city name: ")
+        elif choice == '2':
+            city_name = get_current_location()
+            print(f"Detected current location: {city_name}")
+        else:
+            print("Invalid choice. Exiting...")
+            exit()
 
-    get_weather(city_name)
+        get_weather(city_name)
 
 
 
