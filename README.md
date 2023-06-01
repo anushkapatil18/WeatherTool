@@ -27,6 +27,7 @@ Open the terminal or command prompt and navigate to the project directory.
  ```bash
     python weather.py
     
+
 The application will prompt you to enter a city name. Type the name of the city and press Enter.
 
 The current weather information for the specified city will be displayed, including temperature, humidity, wind speed, and description.
