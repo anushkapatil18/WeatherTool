@@ -3,7 +3,6 @@ import geocoder
 from tabulate import tabulate
 import matplotlib.pyplot as plt
 import numpy as np
-import seaborn as sns
 
 API_KEY = '67616e981465124e28cfcf9cc22d6dc4'
 
@@ -112,36 +111,20 @@ def visualize_weather_comparison(city_names, temperature_data):
         print("Insufficient data to visualize weather comparison. Please make sure data is available for all cities.")
         return
 
-    # Setting the seaborn style
-    sns.set(style='darkgrid')
-
-    # Creating a color palette for the bars
-    colors = sns.color_palette('Set3', len(city_names))
-
     # Plotting the temperature data
     x_labels = np.arange(len(city_names))
-    plt.figure(figsize=(10, 6))
-    plt.bar(x_labels, temperature_data, color=colors)
-
-    # Adding labels and title
-    plt.xlabel('City', fontsize=12)
-    plt.ylabel('Temperature (°C)', fontsize=12)
-    plt.title('Weather Comparison', fontsize=14, fontweight='bold')
-
-    # Customizing tick labels and rotation
-    plt.xticks(x_labels, city_names, rotation=45, fontsize=10)
-
-    # Adding a legend
-    legend_labels = [f'{city}: {temp}°C' for city, temp in zip(city_names, temperature_data)]
-    plt.legend(legend_labels, loc='upper right', fontsize=8)
-
-    # Adding a grid for better readability
-    plt.grid(axis='y', linestyle='--', alpha=0.5)
+    plt.figure(figsize=(8, 5))
+    plt.bar(x_labels, temperature_data, color='blue')
+    plt.xlabel('City')
+    plt.ylabel('Temperature (°C)')
+    plt.title('Weather Comparison')
+    plt.xticks(x_labels, city_names, rotation=45)
 
     # Save the figure as an image file
+    #other method to show the graph
+    #plt.show()
+    #save the graph
     plt.savefig('weather_comparison.png')
-
-
 
 # Code to get weekly temperature
 def get_weekly_temperature(city_name):
