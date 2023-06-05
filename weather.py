@@ -141,6 +141,9 @@ def visualize_weather_comparison(city_names, temperature_data):
     # Save the figure as an image file
     plt.savefig('weather_comparison.png')
 
+    #print a success message to the user after the image is saved
+    print("Weather comparison image saved successfully!")
+
 
 
 # Code to get weekly temperature
