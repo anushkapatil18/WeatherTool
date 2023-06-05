@@ -1,11 +1,14 @@
-import requests
+import os
 import geocoder
 from tabulate import tabulate
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+import requests
+import dotenv
 
-API_KEY = '67616e981465124e28cfcf9cc22d6dc4'
+dotenv.load_dotenv()
+API_KEY = os.getenv('WEATHER_API_KEY')
 
 # Code to get current location
 def get_current_location():

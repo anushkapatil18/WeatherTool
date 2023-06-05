@@ -3,8 +3,11 @@ import geocoder
 from tabulate import tabulate
 import tkinter as tk
 from tkinter import messagebox
+import dotenv
+import os
 
-API_KEY = '67616e981465124e28cfcf9cc22d6dc4'
+dotenv.load_dotenv()
+API_KEY = os.getenv('WEATHER_API_KEY')
 desp="Morning Mist"
 
 def get_current_location():

@@ -2,10 +2,14 @@ from flask import Flask, render_template, request
 import requests
 import geocoder
 from tabulate import tabulate
+import dotenv
+import os
 
 app = Flask(__name__)
 
-API_KEY = '67616e981465124e28cfcf9cc22d6dc4'
+
+dotenv.load_dotenv()
+API_KEY = os.getenv('WEATHER_API_KEY')
 
 @app.route('/')
 def index():
