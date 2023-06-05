@@ -75,7 +75,7 @@ Enter the number of cities to compare: 3
 Enter city 1 name: Mumbai
 Enter city 2 name: Delhi
 Enter city 3 name: Chennai
-
+Weather comparison image saved successfully!
 
 
 
