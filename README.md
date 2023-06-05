@@ -1,4 +1,4 @@
-<h1 align="center">Weather Tool</h1>
+<h1 align="center">WeatherSense - Your personal weather assistant</h1>
 
 
 <p align="center">A delightful and easy-to-use weather forecast application</p>
@@ -18,7 +18,7 @@
 - Display weather details such as temperature, humidity, wind speed, and description
 - Provide weather-related messages based on the current conditions
 - Simple and intuitive user interface
-
+ - Visual Representation: WeatherSense offers visual representations such as charts or graphs to provide a clear overview of the weather conditions in different cities. This allows users to quickly identify variations and make comparisons at a glance (feature)
 ## Installation
 
 1. Clone the repository:
