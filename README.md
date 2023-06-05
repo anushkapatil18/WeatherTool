@@ -73,5 +73,8 @@ Enter city 1 name: Mumbai
 Enter city 2 name: Delhi
 Enter city 3 name: Chennai
 
+weather_comparison.png
+![image](https://github.com/anushkapatil18/WeatherTool/assets/72657551/efdc09e2-f783-4798-b1ff-ae7e7e0d3a58)
+
 
 
