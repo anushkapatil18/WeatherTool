@@ -48,6 +48,11 @@
 Here's an example of the application in action:
 
 ```bash
+Weather Forecast Tool
+1. Enter a city name
+2. Use current location
+3. Compare multiple cities
+Select an option (1, 2, or 3): 1
 Enter a city name: London
 
 Current weather in London:
@@ -57,5 +62,16 @@ Wind: 10 km/h
 Description: Cloudy
 
 It's a cloudy day. Don't forget your jacket!
+
+Weather Forecast Tool
+1. Enter a city name
+2. Use current location
+3. Compare multiple cities
+Select an option (1, 2, or 3): 3
+Enter the number of cities to compare: 3
+Enter city 1 name: Mumbai
+Enter city 2 name: Delhi
+Enter city 3 name: Chennai
+
 
 
