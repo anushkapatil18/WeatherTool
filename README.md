@@ -1,4 +1,4 @@
-<h1 align="center">Weather Tool</h1>
+<h1 align="center">WeatherSense - Your personal weather assistant</h1>
 
 
 <p align="center">A delightful and easy-to-use weather forecast application</p>
@@ -18,7 +18,7 @@
 - Display weather details such as temperature, humidity, wind speed, and description
 - Provide weather-related messages based on the current conditions
 - Simple and intuitive user interface
-
+ - Visual Representation: WeatherSense offers visual representations such as charts or graphs to provide a clear overview of the weather conditions in different cities. This allows users to quickly identify variations and make comparisons at a glance (feature)
 ## Installation
 
 1. Clone the repository:
@@ -41,13 +41,18 @@
 
 4. The current weather information for the specified city will be displayed, including temperature, humidity, wind speed, and description.
 
-5. Depending on the weather conditions, the application will provide a relevant message, such as "Carry your umbrella, it will rain today" or "Wear sunscreen, it's hot today".(tinker.py)
+5. Depending on the weather conditions, the application will provide a relevant message, such as "Carry your umbrella, it will rain today" or "Wear sunscreen, it's hot today".
 
 ## Example
 
 Here's an example of the application in action:
 
 ```bash
+Weather Forecast Tool
+1. Enter a city name
+2. Use current location
+3. Compare multiple cities
+Select an option (1, 2, or 3): 1
 Enter a city name: London
 
 Current weather in London:
@@ -57,5 +62,16 @@ Wind: 10 km/h
 Description: Cloudy
 
 It's a cloudy day. Don't forget your jacket!
+
+Weather Forecast Tool
+1. Enter a city name
+2. Use current location
+3. Compare multiple cities
+Select an option (1, 2, or 3): 3
+Enter the number of cities to compare: 3
+Enter city 1 name: Mumbai
+Enter city 2 name: Delhi
+Enter city 3 name: Chennai
+
 
 
