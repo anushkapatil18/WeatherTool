@@ -18,7 +18,7 @@
 - Display weather details such as temperature, humidity, wind speed, and description
 - Provide weather-related messages based on the current conditions
 - Simple and intuitive user interface
- - Visual Representation: WeatherSense offers visual representations such as charts or graphs to provide a clear overview of the weather conditions in different cities. This allows users to quickly identify variations and make comparisons at a glance (feature)
+ - Visual Representation: WeatherSense offers visual representations such as charts or graphs to provide a clear overview of the weather conditions in different cities. This allows the users to quickly identify variations and make comparisons at a glance (feature)
 weather_comparison.png
 ![image](https://github.com/anushkapatil18/WeatherTool/assets/72657551/efdc09e2-f783-4798-b1ff-ae7e7e0d3a58)
 
