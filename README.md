@@ -14,7 +14,7 @@
 
 ## Features
 
-- Get the current weather information for a specified city
+- Get the current weather information for a specified city.
 - Display weather details such as temperature, humidity, wind speed, and description
 - Provide weather-related messages based on the current conditions
 - Simple and intuitive user interface
